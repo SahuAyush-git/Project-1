@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("table.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+#cake-container {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#cake {
+    width: 100px;
+    height: 80px;
+    border-radius: 60px;
+    transition: transform 0.3s ease;
+}
+
+#cake:hover {
+    transform: scale(1.1);
+}
+
+#message {
+    font-size: 36px;
+    font-weight: bold;
+    color: beige;
+    margin-top: 20px;
+    display: inline-block;
+    animation: appear 2s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+#video-container {
+    margin-top: 20px;
+}
+
+/* Animation for the "Happy Birthday" message */
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

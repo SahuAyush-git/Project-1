@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Cake Game</title>
+    <link rel="stylesheet" href="gift.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Click the Birthday Cake!</h1>
+        <div id="cake-container">
+            <img id="cake" src="cake.jpg" alt="Birthday Cake">
+        </div>
+        <div id="message" class="hidden">
+            <p>Happy Birthday! 🎉</p>
+        </div>
+        <div id="video-container" class="hidden">
+            <video id="birthday-video" width="640" controls>
+                <source src="bday.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="gift.js"></script>
+</body>
+</html>
